@@ -1,0 +1,219 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: darkseagreen; /* Background color of the page */
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: pink;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    background-color: #aaceaa;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-image: url("images/after.png");
+    background-position: center;
+    background-size: cover;
+    color: darkseagreen;
+}
+
+main {
+    padding-top: 80px; /* Space for fixed header */
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+    min-height: 100vh;
+    background-color: white; /* Background color of sections */
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#home {
+    background-image: url("images/main.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.title-box {
+    background-image: url("images/main.jpg");
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.title-box:hover {
+    transform: scale(1.2);
+    font-size: 3em; /* Adjust as needed */
+}
+
+#main-title {
+    margin: 0;
+}
+
+#about {
+    background-image: url("images/pink.jpg");
+}
+
+#education {
+    background-image: url("images/pink.jpg");
+}
+
+#contact {
+    background-image: url("images/pink.jpg");
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+img:active {
+    transform: scale(1.2);
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+    gap: 20px;
+    text-align: left;
+    flex-direction: column; /* Stack the elements vertically */
+}
+
+.text-box{
+    background-color: pink;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    cursor: pointer;
+    text-align: center; /* Center the text inside the box */
+    max-width: 600px; /* Optional: Limit the width of the text box */
+    width: 100%; /* Make the text box responsive */
+}
+
+.text-box:hover {
+    transform: scale(1.2);
+}
+
+.image-box {
+    background-image: url("images/me.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 400px;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+contact-icons img:hover {
+    transform: scale(1.2);
+}
+
+.education-content {
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically */
+    align-items: center; /* Center the content horizontally */
+    justify-content: center; /* Center the content vertically */
+    text-align: center;
+    gap: 20px;
+    min-height: 100vh; /* Ensure the section takes full height */
+}
+
+.skills-box {
+    background-image: url("images/pink.jpg");
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.skills-box:hover {
+    transform: scale(1.1);
+}
+
+.language {
+    margin-bottom: 20px;
+}
+
+.language img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+/* Add footer styles */
+footer {
+    background-color: pink;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    background-color: #aaceaa;
+    color: white;
+}
